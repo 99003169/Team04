@@ -68,6 +68,8 @@ void test_do_fahrenheit_celsius(void) {
   CU_ASSERT_FLOAT(2.3 == do_fahrenheit_celsius(80.0));
 }
 
+//-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
+
 void test_do_add(void) {
   CU_ASSERT_EQUAL(7, do_add(5,2));
   CU_ASSERT_EQUAL(10, do_add(7,3));
@@ -101,10 +103,10 @@ void test_do_modulus(void) {
 void test_do_factorial(void) {
   CU_ASSERT_EQUAL(120, do_factorial(5));
   CU_ASSERT_EQUAL(1, do_factorial(1));
-  CU_ASSERT_EQUAL(6, do_factorialdo_add(3));
+  CU_ASSERT_EQUAL(6, do_factorial(3));
 }
 
 void test_do_exponent(void) {
   CU_ASSERT_EQUAL(5, do_exponent(1));
-  CU_ASSERT_EQUAL(7, do_exponent(7,1));
-  CU_ASSERT_EQUAL(3, do_exponent(1500,500));
+  CU_ASSERT_EQUAL(7, do_exponent(7));
+  CU_ASSERT_EQUAL(3, do_exponent(15));
