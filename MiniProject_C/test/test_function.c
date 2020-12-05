@@ -51,26 +51,22 @@ int main() {
 /* Note: Do not edit END */
   return 0;
 }
-
-//---------------------------------TEMPERATURE CONVERSIONS----------------------------- 
-
+/* Write all the test functions */
 void test_do_celsius_fahrenheit(void) {
-  CU_ASSERT(86 == do_celsius_fahrenheit(30));
-  CU_ASSERT(68 == do_celsius_fahrenheit(20));
+  CU_ASSERT_FLOAT(86.0 == do_celsius_fahrenheit(30.0));
+  CU_ASSERT_FLOAT(68.0 == do_celsius_fahrenheit(20.0));
  
   /* Dummy fail*/
-  CU_ASSERT(100 == do_celsius_fahrenheit(25));
+  CU_ASSERT_FLOAT(100.0 == do_celsius_fahrenheit(25.0));
 }
 
 void test_do_fahrenheit_celsius(void) {
-  CU_ASSERT(37.7 == do_fahrenheit_celsius(100.0));
-  CU_ASSERT(32.2 == do_fahrenheit_celsius(90.0));
+  CU_ASSERT_FLOAT(37.7 == do_fahrenheit_celsius(100.0));
+  CU_ASSERT_FLOAT(32.2 == do_fahrenheit_celsius(90.0));
 
   /* Dummy fail*/
-  CU_ASSERT(2.3 == do_fahrenheit_celsius(80.0));
+  CU_ASSERT_FLOAT(2.3 == do_fahrenheit_celsius(80.0));
 }
-
-//--------------------------------------ARITHEMETIC OPERATIONS-----------------------------------
 
 void test_do_add(void) {
   CU_ASSERT_EQUAL(7, do_add(5,2));
@@ -91,15 +87,9 @@ void test_do_multiply(void) {
 }
 
 void test_do_divide(void) {
-  CU_ASSERT_EQUAL(5, test_do_divide(10,2));
-  CU_ASSERT_EQUAL(7, test_do_divide(7,1));
-  CU_ASSERT_EQUAL(3, test_do_divide(1500,500));
-}
-
-void test_do_squareroot(void) {
-  CU_ASSERT_EQUAL(5, test_do_squareroot(25));
-  CU_ASSERT_EQUAL(10, test_do_squareroot(100));
-  CU_ASSERT_EQUAL(7, test_do_squareroot(49));
+  CU_ASSERT_EQUAL(5, do_divide(10,2));
+  CU_ASSERT_EQUAL(7, do_divide(7,1));
+  CU_ASSERT_EQUAL(3, do_divide(1500,500));
 }
 
 void test_do_modulus(void) {
