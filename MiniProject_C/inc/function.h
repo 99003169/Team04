@@ -7,3 +7,5 @@ float do_fahrenheit_celsius(float);
 float do_celsius_kelvin(float);
 float do_kelvin_celsius(float);
 float do_fahrenheit_kelvin(float);
+
+#endif
