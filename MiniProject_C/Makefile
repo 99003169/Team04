@@ -14,7 +14,7 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
-#DOCUMENTATION_OUTPUT = documentation/html
+DOCUMENTATION_OUTPUT = documentation/html
 
 $(PROJECT_NAME):all
 
@@ -30,11 +30,11 @@ test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
 	./$(TEST_OUTPUT)
 
-#doc:
+doc:
 	make -C documentation
 
-#clean:
-#	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+clean:
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 $(BUILD):
 	mkdir build
