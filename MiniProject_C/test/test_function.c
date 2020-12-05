@@ -6,7 +6,7 @@
 
 /* Prototypes for all the test functions */
 void test_do_celsius_fahrenheit(void);
-void test_do_fahrenheit_celsius(void);
+//void test_do_fahrenheit_celsius(void);
 
 void test_do_add(void);
 void test_do_subtract(void);
@@ -28,7 +28,7 @@ int main() {
 
 /* Add your test functions in this format for testing*/
   CU_add_test(suite, "celsius_fahrenheit", test_do_celsius_fahrenheit);
-  CU_add_test(suite, "fahrenheit_celsius", test_do_fahrenheit_celsius);
+  //CU_add_test(suite, "fahrenheit_celsius", test_do_fahrenheit_celsius);
 
   CU_add_test(suite, "TEST_ADD", test_do_add);
   CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
