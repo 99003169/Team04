@@ -12,7 +12,7 @@ INC = -Iinc\
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
-#TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 #DOCUMENTATION_OUTPUT = documentation/html
 
