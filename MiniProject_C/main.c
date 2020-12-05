@@ -3,6 +3,7 @@
 
 int main()
 {
+    double spclin;
     float input1,result;
     int choice;
     printf("\nPlease select the required operation to be performed \n");
@@ -18,8 +19,8 @@ int main()
     {
         case 1:
             printf("\nEnter temp to convert");
-            scanf("%f",&input1);
-            result = do_celsius_fahrenheit(input1);
+            scanf("%f",&spclin);
+            result = do_celsius_fahrenheit(spclin);
             printf("%f",result);
             break;
 

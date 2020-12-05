@@ -3,9 +3,9 @@
 #include<math.h>
 #define PI 3.14159265
 
-float do_celsius_fahrenheit(float input1)
+double do_celsius_fahrenheit(double input1)
 {
-    float result = (9/5)*(input1)+32;
+    double result = (9/5)*(input1)+32;
     return result;
 }
 
