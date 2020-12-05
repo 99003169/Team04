@@ -9,6 +9,13 @@ void test_do_celsius_fahrenheit(void);
 void test_do_fahrenheit_celsius(void);
 
 void test_do_add(void);
+void test_do_subtract(void);
+void test_do_multiply(void);
+void test_do_divide(void);
+void test_do_squareroot(void);
+void test_do_modulus(void);
+void test_do_factorial(void);
+void test_do_exponent(void);
 
 /* Start of the application test */
 int main() {
@@ -24,7 +31,13 @@ int main() {
   CU_add_test(suite, "fahrenheit_celsius", test_do_fahrenheit_celsius);
 
   CU_add_test(suite, "TEST_ADD", test_do_add);
-
+  CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
+  CU_add_test(suite, "TEST_MULTIPLY", test_do_multiply);
+  CU_add_test(suite, "TEST_DIVIDE", test_do_divide);
+  CU_add_test(suite, "TEST_SQUAREROOT", test_do_squareroot);
+  CU_add_test(suite, "TEST_MODULUS", test_do_modulus);
+  CU_add_test(suite, "TEST_FACTORIAL", test_do_factorial);
+  CU_add_test(suite, "TEST_EXPONENT", test_do_exponent);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -58,5 +71,23 @@ void test_do_fahrenheit_celsius(void) {
 void test_do_add(void) {
   CU_ASSERT_EQUAL(7, do_add(5,2));
   CU_ASSERT_EQUAL(10, do_add(7,3));
-  CU_ASSERT_EQUAL(1000, do_add(500,1500));
+  CU_ASSERT_EQUAL(2000, do_add(500,1500));
+}
+
+void test_do_subtract(void) {
+  CU_ASSERT_EQUAL(3, do_add(5,2));
+  CU_ASSERT_EQUAL(4, do_add(7,3));
+  CU_ASSERT_EQUAL(1000, do_add(1500,500));
+}
+
+void test_do_multiply(void) {
+  CU_ASSERT_EQUAL(10, do_add(5,2));
+  CU_ASSERT_EQUAL(21, do_add(7,3));
+  CU_ASSERT_EQUAL(5000, do_add(500,10));
+}
+
+void test_do_divide(void) {
+  CU_ASSERT_EQUAL(5, do_add(10,2));
+  CU_ASSERT_EQUAL(7, do_add(7,1));
+  CU_ASSERT_EQUAL(3, do_add(1500,500));
 }
