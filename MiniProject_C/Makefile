@@ -5,7 +5,7 @@ BUILD = build
 SRC = src/function.c\
 main.c\
 
-#TEST_SRC = src/function.c\
+TEST_SRC = src/function.c\
 test/test_function.c\
 
 INC = -Iinc\
@@ -26,9 +26,9 @@ all: $(SRC) $(BUILD)
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT)
 
-#test:$(BUILD)
-#	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
-#	./$(TEST_OUTPUT)
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
+	./$(TEST_OUTPUT)
 
 #doc:
 	make -C documentation
