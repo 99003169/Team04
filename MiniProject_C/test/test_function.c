@@ -51,7 +51,8 @@ int main() {
 /* Note: Do not edit END */
   return 0;
 }
-/* Write all the test functions */
+
+//------------------------------------------------TEMPERATURE CONVERSIONS-------------------------------------------
 void test_do_celsius_fahrenheit(void) {
   CU_ASSERT_FLOAT(86.0 == do_celsius_fahrenheit(30.0));
   CU_ASSERT_FLOAT(68.0 == do_celsius_fahrenheit(20.0));
@@ -104,6 +105,12 @@ void test_do_factorial(void) {
   CU_ASSERT_EQUAL(120, do_fact(5));
   CU_ASSERT_EQUAL(1, do_fact(1));
   CU_ASSERT_EQUAL(6, do_fact(3));
+}
+
+void test_do_squareroot(void) {
+  CU_ASSERT_EQUAL(5, do_squareroot(25));
+  CU_ASSERT_EQUAL(7, do_squareroot(49));
+  CU_ASSERT_EQUAL(10, do_squareroot(100));
 }
 
 /*
