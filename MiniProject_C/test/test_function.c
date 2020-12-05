@@ -106,8 +106,10 @@ void test_do_factorial(void) {
   CU_ASSERT_EQUAL(6, do_fact(3));
 }
 
+/*
 void test_do_exponent(void) {
   CU_ASSERT_EQUAL(5, do_exponent(1));
   CU_ASSERT_EQUAL(7, do_exponent(7));
   CU_ASSERT_EQUAL(3, do_exponent(15));
 }
+*/
