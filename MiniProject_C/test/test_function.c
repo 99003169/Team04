@@ -4,10 +4,6 @@
 #include <function.h>
 #define PROJECT_NAME "function"
 
-/* Prototypes for all the test functions */
-void test_do_celsius_fahrenheit(void);
-//void test_do_fahrenheit_celsius(void);
-
 void test_do_add(void);
 void test_do_subtract(void);
 void test_do_multiply(void);
@@ -15,9 +11,7 @@ void test_do_divide(void);
 void test_do_squareroot(void);
 void test_do_modulus(void);
 void test_do_factorial(void);
-//void test_do_exponent(void);
 
-/* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
   /*Initialize and setup the Test Framework */
@@ -26,10 +20,6 @@ int main() {
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
 /* Note: Do not edit END */
 
-/* Add your test functions in this format for testing*/
-  CU_add_test(suite, "celsius_fahrenheit", test_do_celsius_fahrenheit);
-  //CU_add_test(suite, "fahrenheit_celsius", test_do_fahrenheit_celsius);
-
   CU_add_test(suite, "TEST_ADD", test_do_add);
   CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
   CU_add_test(suite, "TEST_MULTIPLY", test_do_multiply);
@@ -37,7 +27,6 @@ int main() {
   CU_add_test(suite, "TEST_SQUAREROOT", test_do_squareroot);
   CU_add_test(suite, "TEST_MODULUS", test_do_modulus);
   CU_add_test(suite, "TEST_FACTORIAL", test_do_factorial);
-  /* CU_add_test(suite, "TEST_EXPONENT", test_do_exponent); */
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -51,19 +40,6 @@ int main() {
 /* Note: Do not edit END */
   return 0;
 }
-
-//------------------------------------------------TEMPERATURE CONVERSIONS-------------------------------------------
-void test_do_celsius_fahrenheit(void) {
-  CU_ASSERT_DOUBLE_EQUAL(86.00000000, do_celsius_fahrenheit(30.00000000), 0.000000001);
-  CU_ASSERT_DOUBLE_EQUAL(68.00000000, do_celsius_fahrenheit(20.00000000), 0.000000001);
-}
-
-/* void test_do_fahrenheit_celsius(void) {
-  CU_ASSERT(37.7 == do_fahrenheit_celsius(100.0));
-  CU_ASSERT(32.2 == do_fahrenheit_celsius(90.0));
-
-  CU_ASSERT(2.3 == do_fahrenheit_celsius(80.0));
-} */
 
 //-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
 
@@ -108,11 +84,3 @@ void test_do_squareroot(void) {
   CU_ASSERT_EQUAL(7, do_squareroot(49));
   CU_ASSERT_EQUAL(10, do_squareroot(100));
 }
-
-/*
-void test_do_exponent(void) {
-  CU_ASSERT_EQUAL(5, do_exponent(1));
-  CU_ASSERT_EQUAL(7, do_exponent(7));
-  CU_ASSERT_EQUAL(3, do_exponent(15));
-}
-*/
