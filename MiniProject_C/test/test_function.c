@@ -54,19 +54,19 @@ int main() {
 
 //------------------------------------------------TEMPERATURE CONVERSIONS-------------------------------------------
 void test_do_celsius_fahrenheit(void) {
-  CU_ASSERT_FLOAT(86.0 == do_celsius_fahrenheit(30.0));
-  CU_ASSERT_FLOAT(68.0 == do_celsius_fahrenheit(20.0));
+  CU_ASSERT(86.0 == do_celsius_fahrenheit(30.0));
+  CU_ASSERT(68.0 == do_celsius_fahrenheit(20.0));
  
   /* Dummy fail*/
-  CU_ASSERT_FLOAT(100.0 == do_celsius_fahrenheit(25.0));
+  CU_ASSERT(100.0 == do_celsius_fahrenheit(25.0));
 }
 
 void test_do_fahrenheit_celsius(void) {
-  CU_ASSERT_FLOAT(37.7 == do_fahrenheit_celsius(100.0));
-  CU_ASSERT_FLOAT(32.2 == do_fahrenheit_celsius(90.0));
+  CU_ASSERT(37.7 == do_fahrenheit_celsius(100.0));
+  CU_ASSERT(32.2 == do_fahrenheit_celsius(90.0));
 
   /* Dummy fail*/
-  CU_ASSERT_FLOAT(2.3 == do_fahrenheit_celsius(80.0));
+  CU_ASSERT(2.3 == do_fahrenheit_celsius(80.0));
 }
 
 //-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
