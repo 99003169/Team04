@@ -34,7 +34,7 @@ float do_kelvin_celsius(float input1)
     return result;
 }
 
-float do_fahrenheit_kelvin(float input1)
+float do_kelvin_fahrenheit(float input1)
 {
     float result = (5/9)*(input1-32)+273;
     return result;
