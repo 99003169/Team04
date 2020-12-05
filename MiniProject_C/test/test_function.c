@@ -22,6 +22,8 @@ int main() {
   CU_add_test(suite, "celsius_fahrenheit", test_do_celsius_fahrenheit);
   CU_add_test(suite, "fahrenheit_celsius", test_do_fahrenheit_celsius);
 
+  CU_add_test(suite, "ADD", test_do_add);
+
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -40,7 +42,6 @@ void test_do_celsius_fahrenheit(void) {
   CU_ASSERT(86 == do_celsius_fahrenheit(30));
   CU_ASSERT(68 == do_celsius_fahrenheit(20));
  
-
   /* Dummy fail*/
   CU_ASSERT(100 == do_celsius_fahrenheit(25));
 }
@@ -51,4 +52,10 @@ void test_do_fahrenheit_celsius(void) {
 
   /* Dummy fail*/
   CU_ASSERT(2.3 == do_fahrenheit_celsius(80.0));
+}
+
+void test_do_add(void) {
+  CU_ASSERT_EQUAL(7, do_add(5,2));
+  CU_ASSERT_EQUAL(10, do_add(7,3));
+  CU_ASSERT_EQUAL(1000, do_add(500,1500));
 }
