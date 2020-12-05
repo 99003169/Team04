@@ -40,6 +40,8 @@ float do_kelvin_fahrenheit(float input1)
     return result;
 }
 
+
+
 float sine(float x)
 {
     return (sin (x*PI/180));
@@ -68,15 +70,66 @@ float logten(float x)
 {
     return (log10(x));
 }
-float squareroot(float x)
+
+
+
+int do_add(int in1,int in2)
 {
-    return (sqrt(x));
+    int out = in1+in2;
+    return out;
 }
-float exponent(float x)
+
+int do_subtract(int in1,int in2)
 {
-    return(exp(x));
+    int out = in1-in2;
+    return out;
 }
+
+int do_multiply(int in1,int in2)
+{
+    int out = in1*in2;
+    return out;
+}
+
+int do_divide(int in,int in)
+{
+    int out = in1/in2;
+    return out;
+}
+
+double do_squareroot(double triginput)
+{
+    double out = sqrt(triginput);
+    return out;
+}
+
+int do_modulus(int in1,int in2)
+{
+    int out = in1 % in2;
+    return out;
+}
+
+int do_fact(int in1)
+{
+    int i,fact =1;
+    if (in1 < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 1; i <= in1; ++i) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+
+int do_exponent(int in1)
+{
+    return(exp(in1));
+}
+
+/*
 float power(float x, float y)
 {
     return (pow(x,y));
 }
+*/

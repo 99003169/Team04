@@ -64,7 +64,7 @@ int main()
     printf("What do you want to do?\n");
     printf("1.sin 2.cos 3.tan 4.sinh 5.cosh 6.tanh 7.1og10 8.square root 9.exponent 10.power");
     scanf ("%d",&n);
-    if (n<9 && n>0)
+    if (n<7 && n>0)
     {
         printf("\n What is x? ");
         scanf("%f",&x);
@@ -77,11 +77,9 @@ int main()
             case 5: answer = cosineh(x);    break;
             case 6: answer = tangenth(x);   break;
             case 7: answer = logten(x);     break;
-            case 8: answer = squareroot(x); break;
-            case 9: answer = exponent(x);   break;
         }
     }
-    if (n==10)
+    /*if (n==10)
     {
         printf("What is x and y?\n");
         scanf("%f%f",&x,&y);
@@ -91,6 +89,82 @@ int main()
         printf("%f",answer);
     else
         printf("Wrong input.\n");
+    */
+
+    int option,in1,in2,out;
+    double triginput,trigoutput;
+    printf("\nPlease select the required operation to be performed \n");
+    printf("1.Addition\n");
+    printf("2.Subtraction\n");
+    printf("3.Multiplication\n");
+    printf("4.Division\n");
+    printf("5.Square Root\n");
+    printf("6.Modulus\n");
+    printf("7.Factorial\n");
+    printf("8.exponent\n");
+    printf("\nEnter you choice: ");
+    scanf("%d",&option);
+    switch(option)
+    {
+        case 1:
+            printf("\nEnter two number to add");
+            scanf("%d%d",&in1,&in2);
+            out = do_add(in1,in2);
+            printf("%d",out);
+            break;
+            
+        case 2:
+            printf("\nEnter two number to subtract");
+            scanf("%d%d",&in1,&in2);
+            out = do_subtract(in1,in2);
+            printf("%d",out);
+            break;
+            
+        case 3:
+            printf("\nEnter two number to multiply");
+            scanf("%d%d",&in1,&in2);
+            out = do_multiply(in1,in2);
+            printf("%d",out);
+            break;
+            
+        case 4:
+            printf("\nEnter two number to Divide");
+            scanf("%d%d",&in1,&in2);
+            out = do_divide(in1,in2);
+            printf("%d",out);
+            break;
+            
+        case 5:
+            printf("\nEnter a number for squareroot");
+            scanf("%lf",&triginput);
+            trigoutput = do_squareroot(triginput);
+            printf("%lf",trigoutput);
+            break;
+            
+        case 6:
+            printf("\nEnter two number to Mod");
+            scanf("%d%d",&in1,&in2);
+            out = do_modulus(in1,in2);
+            printf("%d",out);
+            break;
+            
+            
+        case 7:
+            printf("\nEnter a number for factorial");
+            scanf("%d",&in1);
+            out = do_fact(in1);
+            printf("%d",out);
+            break;
+
+        case 8:
+            printf("\nEnter a number for factorial");
+            scanf("%d",&in1);
+            out = do_exponent(in1);
+            printf("%d",out);
+            break;
+            
+    }
+
     return 0;
 
 }
