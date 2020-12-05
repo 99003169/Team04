@@ -15,7 +15,7 @@ void test_do_divide(void);
 void test_do_squareroot(void);
 void test_do_modulus(void);
 void test_do_factorial(void);
-//void test_do_exponent(void);
+void test_do_exponent(void);
 
 /* Start of the application test */
 int main() {
@@ -37,7 +37,7 @@ int main() {
   CU_add_test(suite, "TEST_SQUAREROOT", test_do_squareroot);
   CU_add_test(suite, "TEST_MODULUS", test_do_modulus);
   CU_add_test(suite, "TEST_FACTORIAL", test_do_factorial);
-  //CU_add_test(suite, "TEST_EXPONENT", test_do_exponent);
+  CU_add_test(suite, "TEST_EXPONENT", test_do_exponent);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -114,9 +114,7 @@ void test_do_factorial(void) {
   CU_ASSERT_EQUAL(6, do_factorialdo_add(3));
 }
 
-/*
 void test_do_exponent(void) {
   CU_ASSERT_EQUAL(5, do_exponent(1));
   CU_ASSERT_EQUAL(7, do_exponent(7,1));
   CU_ASSERT_EQUAL(3, do_exponent(1500,500));
-*/
