@@ -91,7 +91,7 @@ int do_multiply(int in1,int in2)
     return out;
 }
 
-int do_divide(int in,int in)
+int do_divide(int in1,int in2)
 {
     int out = in1/in2;
     return out;
