@@ -54,8 +54,8 @@ int main() {
 
 //------------------------------------------------TEMPERATURE CONVERSIONS-------------------------------------------
 void test_do_celsius_fahrenheit(void) {
-  CU_ASSERT_DOUBLE_EQUAL(86.00000000, do_celsius_fahrenheit(30.00000000), 0.00000001);
-  CU_ASSERT_DOUBLE_EQUAL(68.00000000, do_celsius_fahrenheit(20.00000000), 0.00000001);
+  CU_ASSERT_DOUBLE_EQUAL(86.00000000, do_celsius_fahrenheit(30.00000000), 0.000000001);
+  CU_ASSERT_DOUBLE_EQUAL(68.00000000, do_celsius_fahrenheit(20.00000000), 0.000000001);
 }
 
 /* void test_do_fahrenheit_celsius(void) {
