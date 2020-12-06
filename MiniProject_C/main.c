@@ -19,9 +19,9 @@ int main()
     {
         case 1:
             printf("\nEnter temp to convert");
-            scanf("%f",&spclin);
+            scanf("%lf",&spclin);
             result = do_celsius_fahrenheit(spclin);
-            printf("%f",result);
+            printf("%lf",result);
             break;
 
         case 2:
