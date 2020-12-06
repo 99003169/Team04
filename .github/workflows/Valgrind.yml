@@ -20,4 +20,4 @@ jobs:
     - name: make test
       run: |
         make test -C MiniProject_C/
-        valgrind ./MiniProject_C/build/Test_Team04.out
+        valgrind ./MiniProject_C/3_Implementation/build/Test_Team04.out
