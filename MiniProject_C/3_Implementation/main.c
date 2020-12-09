@@ -18,7 +18,7 @@ int main()
     switch(choice)
     {
         case 1:
-            printf("\nEnter temp to convert");
+            printf("\nEnter temp convert");
             scanf("%f",&spclin);
             result = do_celsius_fahrenheit(spclin);
             printf("%f",result);
